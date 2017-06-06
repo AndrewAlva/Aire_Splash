@@ -1,11 +1,10 @@
-// Tablet Landscape
-@media only screen and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+// Tablet Styling
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
 	#mbrtWrap{
 		.innerWrap{
 			#aireData{
 				position: relative;
 				width: 100%;
-				height: 425px;
 
 				.innerHead{
 					width: 100%;
@@ -15,25 +14,15 @@
 
 					.logo{
 						position: absolute;
-						top: 174px;
-						right: 71%;
+						margin-bottom: 0;
 					}
 
 					.introduction, .contact{
 						position: absolute;
-						top: 265px;
-						width: 22%;
-					}
-
-					.introduction{
-						left: 34%;
-					}
-
-					.contact{
-						left: 68%;
 					}
 				}
 			}
+
 
 			#grid{
 				position: relative;
@@ -45,19 +34,137 @@
 }
 
 
+// Tablet Landscape
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	#mbrtWrap{
+		.innerWrap{
+			#aireData{
+				height: 425px;
+
+				.innerHead{
+
+					.logo{
+						top: 174px;
+						right: 71%;
+					}
+
+					.introduction, .contact{
+						top: 265px;
+						width: 22%;
+					}
+
+					.introduction{
+						left: 33.7%;
+						margin-bottom: 0;
+					}
+
+					.contact{
+						left: 67.5%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 // Tablet Portrait
-@media only screen and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){}
+@media only screen and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){
+	#mbrtWrap{
+		.innerWrap{
+			#aireData{
+				height: 262px;
+				font-size: 8px;
+
+				.innerHead{
+
+					.logo{
+						top: 96px;
+						right: 71%;
+						width: 118px;
+					}
+
+					.introduction, .contact{
+						top: 147px;
+						width: 26%;
+					}
+
+					.introduction{
+						left: 33.9%;
+						line-height: 1.4em;
+						margin-bottom: 0;
+					}
+
+					.contact{
+						left: 67.7%;
+
+						h1{
+							font-size: 10px;
+						}
+
+						.data{
+							line-height: 1.4em;
+
+							.tel{
+								margin-left: -31px;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
 
 
 // Phones
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
-	
+	#mbrtWrap{
+		.innerWrap{
+			#aireData{
+				height: 197px;
+				font-size: 6.5px;
+
+				.innerHead{
+					.logo{
+						width: 73px;
+						top: 86px;
+						left: 40px;
+						right: auto;
+					}
+
+					.introduction, .contact{
+						position: relative;
+						top: 44px;
+						width: 145px;
+						left: 51%;
+					}
+
+					.introduction{
+						margin-bottom: 15px;
+						line-height: 1.4em;
+					}
+
+					.contact{
+						h1{
+							font-size: 7px;
+							letter-spacing: 3px;
+							margin-bottom: 8px;
+						}
+
+						.design-line{
+							margin-bottom: 6px;
+						}
+
+						.data{
+							.tel{
+								margin-left: -27px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
-
-
-// Phones Landscape
-@media only screen and (max-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1){}
-
-
-// Phones Portrait
-@media only screen and (max-width: 767px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){}

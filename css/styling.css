@@ -55,6 +55,8 @@
           width: 138px;
           height: 16px;
           margin-bottom: 115px; }
+          #mbrtWrap .innerWrap #aireData .innerHead .logo img {
+            width: 100%; }
         #mbrtWrap .innerWrap #aireData .innerHead .introduction {
           position: relative;
           width: 90%;
@@ -146,11 +148,10 @@
     padding-left: 3.5px; }
   #grid .mobNone {
     display: none; } }
-@media only screen and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #mbrtWrap .innerWrap #aireData {
     position: relative;
-    width: 100%;
-    height: 425px; }
+    width: 100%; }
     #mbrtWrap .innerWrap #aireData .innerHead {
       width: 100%;
       height: 100%;
@@ -158,19 +159,74 @@
       padding-right: 0; }
       #mbrtWrap .innerWrap #aireData .innerHead .logo {
         position: absolute;
-        top: 174px;
-        right: 71%; }
+        margin-bottom: 0; }
       #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
-        position: absolute;
-        top: 265px;
-        width: 22%; }
-      #mbrtWrap .innerWrap #aireData .innerHead .introduction {
-        left: 34%; }
-      #mbrtWrap .innerWrap #aireData .innerHead .contact {
-        left: 68%; }
+        position: absolute; }
   #mbrtWrap .innerWrap #grid {
     position: relative;
     width: 100%;
     left: 0; } }
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap .innerWrap #aireData {
+    height: 425px; }
+    #mbrtWrap .innerWrap #aireData .innerHead .logo {
+      top: 174px;
+      right: 71%; }
+    #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
+      top: 265px;
+      width: 22%; }
+    #mbrtWrap .innerWrap #aireData .innerHead .introduction {
+      left: 33.7%;
+      margin-bottom: 0; }
+    #mbrtWrap .innerWrap #aireData .innerHead .contact {
+      left: 67.5%; } }
+@media only screen and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap .innerWrap #aireData {
+    height: 262px;
+    font-size: 8px; }
+    #mbrtWrap .innerWrap #aireData .innerHead .logo {
+      top: 96px;
+      right: 71%;
+      width: 118px; }
+    #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
+      top: 147px;
+      width: 26%; }
+    #mbrtWrap .innerWrap #aireData .innerHead .introduction {
+      left: 33.9%;
+      line-height: 1.4em;
+      margin-bottom: 0; }
+    #mbrtWrap .innerWrap #aireData .innerHead .contact {
+      left: 67.7%; }
+      #mbrtWrap .innerWrap #aireData .innerHead .contact h1 {
+        font-size: 10px; }
+      #mbrtWrap .innerWrap #aireData .innerHead .contact .data {
+        line-height: 1.4em; }
+        #mbrtWrap .innerWrap #aireData .innerHead .contact .data .tel {
+          margin-left: -31px; } }
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap .innerWrap #aireData {
+    height: 197px;
+    font-size: 6.5px; }
+    #mbrtWrap .innerWrap #aireData .innerHead .logo {
+      width: 73px;
+      top: 86px;
+      left: 40px;
+      right: auto; }
+    #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
+      position: relative;
+      top: 44px;
+      width: 145px;
+      left: 51%; }
+    #mbrtWrap .innerWrap #aireData .innerHead .introduction {
+      margin-bottom: 15px;
+      line-height: 1.4em; }
+    #mbrtWrap .innerWrap #aireData .innerHead .contact h1 {
+      font-size: 7px;
+      letter-spacing: 3px;
+      margin-bottom: 8px; }
+    #mbrtWrap .innerWrap #aireData .innerHead .contact .design-line {
+      margin-bottom: 6px; }
+    #mbrtWrap .innerWrap #aireData .innerHead .contact .data .tel {
+      margin-left: -27px; } }
 
 /*# sourceMappingURL=styling.css.map */
