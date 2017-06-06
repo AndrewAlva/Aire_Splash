@@ -42,7 +42,7 @@
 
 			// Header
 			#aireData{
-				position: fixed;
+				position: relative;
 				width: 24.76%;
 				height: 100%;
 				float: left;
@@ -67,6 +67,7 @@
 						width: 138px;
 						height: 16px;
 						margin-bottom: 115px;
+						@include transitions(all, 0.8s, ease-in-out);
 
 						img{
 							width: 100%;
@@ -76,17 +77,21 @@
 					.introduction{
 						position: relative;
 						width: 90%;
+						max-width: 200px;
 						// height: 112px;
 						margin-bottom: 55px;
 						letter-spacing: 1.5px;
 						line-height: 2em;
+						@include transitions(all, 0.8s, ease-in-out);
 					}
 
 					.contact{
 						position: relative;
 						width: 90%;
+						max-width: 200px;
 						// height: 102px;
 						letter-spacing: 1px;
+						@include transitions(all, 0.8s, ease-in-out);
 
 						h1{
 							font-family: sans-serif;
@@ -95,10 +100,12 @@
 							font-size: 12px;
 							font-weight: 500;
 							margin-bottom: 18px;
+							@include transitions(all, 0.8s, ease-in-out);
 						}
 
 						.design-line{
 							margin-bottom: 18px;
+							@include transitions(all, 0.8s, ease-in-out);
 						}
 
 						.data{
@@ -107,6 +114,10 @@
 							.tel{
 								letter-spacing: 1.5px;
 								margin-left: -34px;
+								@include transitions(all, 0.8s, ease-in-out);
+							}
+							.city{
+								@include transitions(all, 0.8s, ease-in-out);
 							}
 						}
 					}
@@ -115,10 +126,11 @@
 
 			// Section
 			#grid{
-				position: absolute;
+				position: relative;
 				width: 75.24%;
-				left: 24.76%;
+				height: 100%;
 				float: left;
+				overflow: scroll;
 
 				.cell-3{
 					width: 32.43%;
@@ -131,6 +143,7 @@
 					position: relative;
 					float: left;
 					@include fixBox();
+					@include transitions(all, 0.8s, ease-in-out);
 					
 					img{
 						width: 100%;
@@ -144,11 +157,10 @@
 				text-decoration: none;
 				color: #808083;
 
-				@include transitions(all, 0.3s, ease-in-out);
+				@include transitions(all, 0.8s, ease-in-out);
 
 				&:hover{
-					color: #2e2e2e;
-					@include opacity(0.5);
+					color: #000;
 				}
 			}
 		}
@@ -160,6 +172,9 @@
 
 	// Responsiveness
 	@import 'responsive';
+
+	// Animations
+	@import 'animation';
 
 	
 

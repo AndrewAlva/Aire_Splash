@@ -31,7 +31,7 @@
     right: 0;
     overflow: scroll; }
     #mbrtWrap .innerWrap #aireData {
-      position: fixed;
+      position: relative;
       width: 24.76%;
       height: 100%;
       float: left;
@@ -54,38 +54,77 @@
           position: relative;
           width: 138px;
           height: 16px;
-          margin-bottom: 115px; }
+          margin-bottom: 115px;
+          -webkit-transition: all 0.8s ease-in-out;
+          -moz-transition: all 0.8s ease-in-out;
+          -ms-transition: all 0.8s ease-in-out;
+          -o-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out; }
           #mbrtWrap .innerWrap #aireData .innerHead .logo img {
             width: 100%; }
         #mbrtWrap .innerWrap #aireData .innerHead .introduction {
           position: relative;
           width: 90%;
+          max-width: 200px;
           margin-bottom: 55px;
           letter-spacing: 1.5px;
-          line-height: 2em; }
+          line-height: 2em;
+          -webkit-transition: all 0.8s ease-in-out;
+          -moz-transition: all 0.8s ease-in-out;
+          -ms-transition: all 0.8s ease-in-out;
+          -o-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out; }
         #mbrtWrap .innerWrap #aireData .innerHead .contact {
           position: relative;
           width: 90%;
-          letter-spacing: 1px; }
+          max-width: 200px;
+          letter-spacing: 1px;
+          -webkit-transition: all 0.8s ease-in-out;
+          -moz-transition: all 0.8s ease-in-out;
+          -ms-transition: all 0.8s ease-in-out;
+          -o-transition: all 0.8s ease-in-out;
+          transition: all 0.8s ease-in-out; }
           #mbrtWrap .innerWrap #aireData .innerHead .contact h1 {
             font-family: sans-serif;
             letter-spacing: 5px;
             text-transform: uppercase;
             font-size: 12px;
             font-weight: 500;
-            margin-bottom: 18px; }
+            margin-bottom: 18px;
+            -webkit-transition: all 0.8s ease-in-out;
+            -moz-transition: all 0.8s ease-in-out;
+            -ms-transition: all 0.8s ease-in-out;
+            -o-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out; }
           #mbrtWrap .innerWrap #aireData .innerHead .contact .design-line {
-            margin-bottom: 18px; }
+            margin-bottom: 18px;
+            -webkit-transition: all 0.8s ease-in-out;
+            -moz-transition: all 0.8s ease-in-out;
+            -ms-transition: all 0.8s ease-in-out;
+            -o-transition: all 0.8s ease-in-out;
+            transition: all 0.8s ease-in-out; }
           #mbrtWrap .innerWrap #aireData .innerHead .contact .data {
             line-height: 1.7em; }
             #mbrtWrap .innerWrap #aireData .innerHead .contact .data .tel {
               letter-spacing: 1.5px;
-              margin-left: -34px; }
+              margin-left: -34px;
+              -webkit-transition: all 0.8s ease-in-out;
+              -moz-transition: all 0.8s ease-in-out;
+              -ms-transition: all 0.8s ease-in-out;
+              -o-transition: all 0.8s ease-in-out;
+              transition: all 0.8s ease-in-out; }
+            #mbrtWrap .innerWrap #aireData .innerHead .contact .data .city {
+              -webkit-transition: all 0.8s ease-in-out;
+              -moz-transition: all 0.8s ease-in-out;
+              -ms-transition: all 0.8s ease-in-out;
+              -o-transition: all 0.8s ease-in-out;
+              transition: all 0.8s ease-in-out; }
     #mbrtWrap .innerWrap #grid {
-      position: absolute;
+      position: relative;
       width: 75.24%;
-      left: 24.76%;
-      float: left; }
+      height: 100%;
+      float: left;
+      overflow: scroll; }
       #mbrtWrap .innerWrap #grid .cell-3 {
         width: 32.43%; }
       #mbrtWrap .innerWrap #grid .space-2 {
@@ -95,7 +134,12 @@
         float: left;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out; }
         #mbrtWrap .innerWrap #grid div img {
           width: 100%; }
     #mbrtWrap .innerWrap a {
@@ -103,17 +147,13 @@
       text-align: left;
       text-decoration: none;
       color: #808083;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
+      -webkit-transition: all 0.8s ease-in-out;
+      -moz-transition: all 0.8s ease-in-out;
+      -ms-transition: all 0.8s ease-in-out;
+      -o-transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out; }
       #mbrtWrap .innerWrap a:hover {
-        color: #2e2e2e;
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
-        -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+        color: #000; }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
   #grid div {
@@ -149,23 +189,27 @@
   #grid .mobNone {
     display: none; } }
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  #mbrtWrap .innerWrap #aireData {
-    position: relative;
-    width: 100%; }
-    #mbrtWrap .innerWrap #aireData .innerHead {
+  #mbrtWrap .innerWrap {
+    overflow: scroll; }
+    #mbrtWrap .innerWrap #aireData {
+      position: relative;
+      width: 100%; }
+      #mbrtWrap .innerWrap #aireData .innerHead {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        padding-right: 0; }
+        #mbrtWrap .innerWrap #aireData .innerHead .logo {
+          position: absolute;
+          margin-bottom: 0; }
+        #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
+          position: absolute; }
+    #mbrtWrap .innerWrap #grid {
+      position: relative;
       width: 100%;
-      height: 100%;
-      top: 0;
-      padding-right: 0; }
-      #mbrtWrap .innerWrap #aireData .innerHead .logo {
-        position: absolute;
-        margin-bottom: 0; }
-      #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
-        position: absolute; }
-  #mbrtWrap .innerWrap #grid {
-    position: relative;
-    width: 100%;
-    left: 0; } }
+      left: 0;
+      height: auto;
+      overflow: hidden; } }
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   #mbrtWrap .innerWrap #aireData {
     height: 425px; }
@@ -228,5 +272,48 @@
       margin-bottom: 6px; }
     #mbrtWrap .innerWrap #aireData .innerHead .contact .data .tel {
       margin-left: -27px; } }
+.fadeInFromRight {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+  -webkit-transform: translate(10px, 0);
+  -moz-transform: translate(10px, 0);
+  -ms-transform: translate(10px, 0);
+  -o-transform: translate(10px, 0);
+  transform: translate(10px, 0); }
+
+.fadeInFromLeft {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+  -webkit-transform: translate(-10px, 0);
+  -moz-transform: translate(-10px, 0);
+  -ms-transform: translate(-10px, 0);
+  -o-transform: translate(-10px, 0);
+  transform: translate(-10px, 0); }
+
+.fadeInFromFall {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
+  transform: translate(0, -10px); }
+
+.fadeInFromClimb {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))';
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  transform: translate(0, 10px); }
 
 /*# sourceMappingURL=styling.css.map */
