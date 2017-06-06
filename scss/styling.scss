@@ -5,8 +5,10 @@
 	// Variables
 
 	*{
-		font-family: serif;
+		font-family: 'Libre Baskerville', serif;
 		color: #808083;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
 	.tester{
@@ -32,21 +34,29 @@
 		.innerWrap{
 			position: absolute;
 			width: 100%;
+			max-width: 1280px;
 			height: 100%;
+			margin: auto;
+			left: 0; right: 0;
+			overflow: scroll;
 
-			header{
+			// Header
+			#aireData{
 				position: fixed;
 				width: 24.76%;
 				height: 100%;
-				border-right: 1px solid #222;
-				font-size: 11px;
+				float: left;
+				font-size: 9px;
+				@include fixBox();
 
 				.innerHead{
 					position: absolute;
 					width: 77.53%;
-					height: 430px;
+					// height: 430px;
 					right: 0;
-					bottom: 80px;
+					top: 30%;
+					padding-right: 30px;
+					@include fixBox();
 
 					p, h1{
 						margin: 0;
@@ -62,16 +72,16 @@
 					.introduction{
 						position: relative;
 						width: 90%;
-						height: 112px;
+						// height: 112px;
 						margin-bottom: 55px;
-						letter-spacing: 1.8px;
-						line-height: 1.6em;
+						letter-spacing: 1.5px;
+						line-height: 2em;
 					}
 
 					.contact{
 						position: relative;
 						width: 90%;
-						height: 102px;
+						// height: 102px;
 						letter-spacing: 1px;
 
 						h1{
@@ -79,7 +89,7 @@
 							letter-spacing: 5px;
 							text-transform: uppercase;
 							font-size: 12px;
-							font-weight: 400;
+							font-weight: 500;
 							margin-bottom: 18px;
 						}
 
@@ -88,24 +98,39 @@
 						}
 
 						.data{
+							line-height: 1.7em;
+
 							.tel{
 								letter-spacing: 1.5px;
-								margin-left: -38px;
+								margin-left: -34px;
 							}
 						}
 					}
 				}
 			}
 
-			section{
-				position: relative;
-				width: 100%;
+			// Section
+			#grid{
+				position: absolute;
+				width: 75.24%;
+				left: 24.76%;
+				float: left;
 
 				.cell-3{
 					width: 32.43%;
 				}
 				.space-2{
 					width: 1.35%;
+				}
+
+				div{
+					position: relative;
+					float: left;
+					@include fixBox();
+					
+					img{
+						width: 100%;
+					}
 				}
 			}
 
@@ -124,5 +149,14 @@
 			}
 		}
 	}
+
+
+	// Grid System
+	@import 'grid';
+
+	// Responsiveness
+	@import 'responsive';
+
+	
 
 // END MANDELBROT style

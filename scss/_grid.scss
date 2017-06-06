@@ -1,0 +1,78 @@
+// Desktop, Laptop & Tablet Grid
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+	#grid{
+		div{
+			width: 33.33%;
+		}
+
+		.desk3Top{
+			padding-bottom: 6px;
+		}
+		.desk3Cent{
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+		.desk3Bottom{
+			padding-top: 6px;
+		}
+
+		.deskL{
+			padding-right: 8px;
+		}
+		.deskC{
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+		.deskR{
+			padding-left: 8px;
+		}
+	}
+}
+
+
+// Tablet Landscape
+@media only screen and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {}
+
+
+// Tablet Portrait
+@media only screen and (max-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){}
+
+
+// Phones
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1){
+	#grid{
+		div{
+			width: 50%;
+		}
+
+		.mob2Top{
+			padding-bottom: 3.5px;
+		}
+		.mob2Cent{
+			padding-top: 3.5px;
+			padding-bottom: 3.5px;
+		}
+		.mob2Bottom{
+			padding-top: 3.5px;
+		}
+
+		.mobL{
+			padding-right: 3.5px;
+		}
+		.mobR{
+			padding-left: 3.5px;
+		}
+
+		.mobNone{
+			display: none;
+		}
+	}
+}
+
+
+// Phones Landscape
+@media only screen and (max-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1){}
+
+
+// Phones Portrait
+@media only screen and (max-width: 767px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){}

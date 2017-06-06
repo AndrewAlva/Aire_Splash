@@ -1,6 +1,8 @@
 * {
-  font-family: serif;
-  color: #808083; }
+  font-family: 'Libre Baskerville', serif;
+  color: #808083;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .tester {
   width: 209px;
@@ -22,57 +24,78 @@
   #mbrtWrap .innerWrap {
     position: absolute;
     width: 100%;
-    height: 100%; }
-    #mbrtWrap .innerWrap header {
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    overflow: scroll; }
+    #mbrtWrap .innerWrap #aireData {
       position: fixed;
       width: 24.76%;
       height: 100%;
-      border-right: 1px solid #222;
-      font-size: 11px; }
-      #mbrtWrap .innerWrap header .innerHead {
+      float: left;
+      font-size: 9px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      #mbrtWrap .innerWrap #aireData .innerHead {
         position: absolute;
         width: 77.53%;
-        height: 430px;
         right: 0;
-        bottom: 80px; }
-        #mbrtWrap .innerWrap header .innerHead p, #mbrtWrap .innerWrap header .innerHead h1 {
+        top: 30%;
+        padding-right: 30px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        #mbrtWrap .innerWrap #aireData .innerHead p, #mbrtWrap .innerWrap #aireData .innerHead h1 {
           margin: 0; }
-        #mbrtWrap .innerWrap header .innerHead .logo {
+        #mbrtWrap .innerWrap #aireData .innerHead .logo {
           position: relative;
           width: 138px;
           height: 16px;
           margin-bottom: 115px; }
-        #mbrtWrap .innerWrap header .innerHead .introduction {
+        #mbrtWrap .innerWrap #aireData .innerHead .introduction {
           position: relative;
           width: 90%;
-          height: 112px;
           margin-bottom: 55px;
-          letter-spacing: 1.8px;
-          line-height: 1.6em; }
-        #mbrtWrap .innerWrap header .innerHead .contact {
+          letter-spacing: 1.5px;
+          line-height: 2em; }
+        #mbrtWrap .innerWrap #aireData .innerHead .contact {
           position: relative;
           width: 90%;
-          height: 102px;
           letter-spacing: 1px; }
-          #mbrtWrap .innerWrap header .innerHead .contact h1 {
+          #mbrtWrap .innerWrap #aireData .innerHead .contact h1 {
             font-family: sans-serif;
             letter-spacing: 5px;
             text-transform: uppercase;
             font-size: 12px;
-            font-weight: 400;
+            font-weight: 500;
             margin-bottom: 18px; }
-          #mbrtWrap .innerWrap header .innerHead .contact .design-line {
+          #mbrtWrap .innerWrap #aireData .innerHead .contact .design-line {
             margin-bottom: 18px; }
-          #mbrtWrap .innerWrap header .innerHead .contact .data .tel {
-            letter-spacing: 1.5px;
-            margin-left: -38px; }
-    #mbrtWrap .innerWrap section {
-      position: relative;
-      width: 100%; }
-      #mbrtWrap .innerWrap section .cell-3 {
+          #mbrtWrap .innerWrap #aireData .innerHead .contact .data {
+            line-height: 1.7em; }
+            #mbrtWrap .innerWrap #aireData .innerHead .contact .data .tel {
+              letter-spacing: 1.5px;
+              margin-left: -34px; }
+    #mbrtWrap .innerWrap #grid {
+      position: absolute;
+      width: 75.24%;
+      left: 24.76%;
+      float: left; }
+      #mbrtWrap .innerWrap #grid .cell-3 {
         width: 32.43%; }
-      #mbrtWrap .innerWrap section .space-2 {
+      #mbrtWrap .innerWrap #grid .space-2 {
         width: 1.35%; }
+      #mbrtWrap .innerWrap #grid div {
+        position: relative;
+        float: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        #mbrtWrap .innerWrap #grid div img {
+          width: 100%; }
     #mbrtWrap .innerWrap a {
       display: block;
       text-align: left;
@@ -89,5 +112,65 @@
         filter: alpha(opacity=50);
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
         -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  #grid div {
+    width: 33.33%; }
+  #grid .desk3Top {
+    padding-bottom: 6px; }
+  #grid .desk3Cent {
+    padding-top: 6px;
+    padding-bottom: 6px; }
+  #grid .desk3Bottom {
+    padding-top: 6px; }
+  #grid .deskL {
+    padding-right: 8px; }
+  #grid .deskC {
+    padding-left: 4px;
+    padding-right: 4px; }
+  #grid .deskR {
+    padding-left: 8px; } }
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  #grid div {
+    width: 50%; }
+  #grid .mob2Top {
+    padding-bottom: 3.5px; }
+  #grid .mob2Cent {
+    padding-top: 3.5px;
+    padding-bottom: 3.5px; }
+  #grid .mob2Bottom {
+    padding-top: 3.5px; }
+  #grid .mobL {
+    padding-right: 3.5px; }
+  #grid .mobR {
+    padding-left: 3.5px; }
+  #grid .mobNone {
+    display: none; } }
+@media only screen and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  #mbrtWrap .innerWrap #aireData {
+    position: relative;
+    width: 100%;
+    height: 425px; }
+    #mbrtWrap .innerWrap #aireData .innerHead {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      padding-right: 0; }
+      #mbrtWrap .innerWrap #aireData .innerHead .logo {
+        position: absolute;
+        top: 174px;
+        right: 71%; }
+      #mbrtWrap .innerWrap #aireData .innerHead .introduction, #mbrtWrap .innerWrap #aireData .innerHead .contact {
+        position: absolute;
+        top: 265px;
+        width: 22%; }
+      #mbrtWrap .innerWrap #aireData .innerHead .introduction {
+        left: 34%; }
+      #mbrtWrap .innerWrap #aireData .innerHead .contact {
+        left: 68%; }
+  #mbrtWrap .innerWrap #grid {
+    position: relative;
+    width: 100%;
+    left: 0; } }
 
 /*# sourceMappingURL=styling.css.map */
