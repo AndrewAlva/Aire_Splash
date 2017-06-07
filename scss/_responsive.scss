@@ -1,3 +1,17 @@
+// Large devices styling
+@media only screen and (min-width: 1550px) and (-webkit-min-device-pixel-ratio: 1){
+	#mbrtWrap{
+		.innerWrap{
+			#aireData{
+				width: 318px;
+				left: 10%;
+			}
+		}
+	}
+}
+
+
+
 // Tablet Styling
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
 	#mbrtWrap{
@@ -7,6 +21,7 @@
 			#aireData{
 				position: relative;
 				width: 100%;
+				margin-bottom: 10px;
 
 				.innerHead{
 					width: 100%;
@@ -21,6 +36,12 @@
 
 					.introduction, .contact{
 						position: absolute;
+					}
+
+					.contact{
+						.data{
+							line-height: 1.4em;
+						}
 					}
 				}
 			}
@@ -107,8 +128,6 @@
 						}
 
 						.data{
-							line-height: 1.4em;
-
 							.tel{
 								margin-left: -31px;
 							}
@@ -127,13 +146,13 @@
 	#mbrtWrap{
 		.innerWrap{
 			#aireData{
-				height: 210px;
+				height: 220px;
 				font-size: 6.5px;
 
 				.innerHead{
 					.logo{
 						width: 73px;
-						top: 86px;
+						top: 76px;
 						left: 40px;
 						right: auto;
 					}
@@ -163,7 +182,7 @@
 
 						.data{
 							.tel{
-								margin-left: -27px;
+								margin-left: -28px;
 							}
 						}
 					}

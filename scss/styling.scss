@@ -29,7 +29,7 @@
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		overflow: hidden;
+		overflow: scroll;
 
 		.innerWrap{
 			position: absolute;
@@ -38,11 +38,10 @@
 			height: 100%;
 			margin: auto;
 			left: 0; right: 0;
-			overflow: scroll;
 
 			// Header
 			#aireData{
-				position: relative;
+				position: fixed;
 				width: 24.76%;
 				height: 100%;
 				float: left;
@@ -114,6 +113,7 @@
 							.tel{
 								letter-spacing: 1.5px;
 								margin-left: -34px;
+								@include keepWordsInLine();
 								@include transitions(all, 0.8s, ease-in-out);
 							}
 							.city{
@@ -128,9 +128,7 @@
 			#grid{
 				position: relative;
 				width: 75.24%;
-				height: 100%;
-				float: left;
-				overflow: scroll;
+				float: right;
 
 				.cell-3{
 					width: 32.43%;
